@@ -1,6 +1,6 @@
 package eu.kocka.jeopardyBackEnd.repository;
 
-import eu.kocka.jeopardyBackEnd.enitity.Game;
+import eu.kocka.jeopardyBackEnd.entity.Game;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.Optional;

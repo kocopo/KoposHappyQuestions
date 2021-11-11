@@ -1,6 +1,6 @@
 package eu.kocka.jeopardyBackEnd.service;
 
-import eu.kocka.jeopardyBackEnd.enitity.Game;
+import eu.kocka.jeopardyBackEnd.entity.Game;
 import eu.kocka.jeopardyBackEnd.exception.NotFoundException;
 import eu.kocka.jeopardyBackEnd.repository.CategoryRepository;
 import eu.kocka.jeopardyBackEnd.repository.GameRepository;

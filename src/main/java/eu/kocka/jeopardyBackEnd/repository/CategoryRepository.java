@@ -1,6 +1,6 @@
 package eu.kocka.jeopardyBackEnd.repository;
 
-import eu.kocka.jeopardyBackEnd.enitity.Category;
+import eu.kocka.jeopardyBackEnd.entity.Category;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;

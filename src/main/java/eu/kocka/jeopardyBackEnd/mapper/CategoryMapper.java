@@ -1,7 +1,7 @@
 package eu.kocka.jeopardyBackEnd.mapper;
 
 import eu.kocka.jeopardyBackEnd.dto.CategoryDto;
-import eu.kocka.jeopardyBackEnd.enitity.Category;
+import eu.kocka.jeopardyBackEnd.entity.Category;
 
 import java.util.ArrayList;
 import java.util.List;

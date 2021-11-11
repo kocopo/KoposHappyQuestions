@@ -1,4 +1,4 @@
-package eu.kocka.jeopardyBackEnd.enitity;
+package eu.kocka.jeopardyBackEnd.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

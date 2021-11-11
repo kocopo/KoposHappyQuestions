@@ -1,7 +1,7 @@
 package eu.kocka.jeopardyBackEnd.controller;
 
 import eu.kocka.jeopardyBackEnd.dto.CategoryDto;
-import eu.kocka.jeopardyBackEnd.enitity.Category;
+import eu.kocka.jeopardyBackEnd.entity.Category;
 import eu.kocka.jeopardyBackEnd.exception.NotFoundException;
 import eu.kocka.jeopardyBackEnd.mapper.CategoryMapper;
 import eu.kocka.jeopardyBackEnd.service.CategoryService;

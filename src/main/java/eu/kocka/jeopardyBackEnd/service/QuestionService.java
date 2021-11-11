@@ -1,7 +1,7 @@
 package eu.kocka.jeopardyBackEnd.service;
 
-import eu.kocka.jeopardyBackEnd.enitity.Category;
-import eu.kocka.jeopardyBackEnd.enitity.Question;
+import eu.kocka.jeopardyBackEnd.entity.Category;
+import eu.kocka.jeopardyBackEnd.entity.Question;
 import eu.kocka.jeopardyBackEnd.exception.NotFoundException;
 import eu.kocka.jeopardyBackEnd.repository.QuestionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
