@@ -7,6 +7,6 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class CommonDto {
-    private String error;
+public class ErrorDto {
+    private String message;
 }

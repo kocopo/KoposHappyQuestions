@@ -1,9 +1,6 @@
 package eu.kocka.jeopardyBackEnd.enitity;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.List;
@@ -20,7 +17,7 @@ public class Category {
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
-    @Column(name = "category_name")
+    @Column(name = "category_name", nullable = false)
     private String categoryName;
     @ManyToOne
     @JoinColumn(name = "game_id", nullable = false)

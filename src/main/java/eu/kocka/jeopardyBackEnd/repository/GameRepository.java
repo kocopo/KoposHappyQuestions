@@ -7,4 +7,5 @@ import java.util.Optional;
 
 public interface GameRepository extends CrudRepository<Game, Long> {
     Optional<Game> findByGameName(String name);
+    void deleteById(Long id);
 }

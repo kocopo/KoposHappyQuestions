@@ -19,9 +19,9 @@ public class Question {
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
-    @Column(name = "text")
+    @Column(name = "text", nullable = false)
     private String text;
-    @Column(name = "worth")
+    @Column(name = "worth", nullable = false)
     private int worth;
     @ManyToOne
     @JoinColumn(name = "category_id", nullable = false)

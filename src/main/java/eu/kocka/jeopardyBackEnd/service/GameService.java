@@ -1,6 +1,7 @@
 package eu.kocka.jeopardyBackEnd.service;
 
 import eu.kocka.jeopardyBackEnd.enitity.Game;
+import eu.kocka.jeopardyBackEnd.exception.NotFoundException;
 import eu.kocka.jeopardyBackEnd.repository.CategoryRepository;
 import eu.kocka.jeopardyBackEnd.repository.GameRepository;
 import eu.kocka.jeopardyBackEnd.repository.QuestionRepository;
@@ -25,12 +26,12 @@ public class GameService {
         this.questionRepository = questionRepository;
     }
 
-    public Game getGameByName(String name){
-        return gameRepository.findByGameName(name).orElse(null);
+    public Game getGameByName(String name) throws NotFoundException {
+        return gameRepository.findByGameName(name).orElseThrow(() -> new NotFoundException("Game not found with name : " + name));
     }
 
-    public Game getGameById(Long id){
-        return gameRepository.findById(id).orElse(null);
+    public Game getGameById(Long id) throws NotFoundException {
+        return gameRepository.findById(id).orElseThrow(() -> new NotFoundException("Game not found with id : " + id));
     }
 
     public Game saveGame(Game game){
@@ -41,5 +42,13 @@ public class GameService {
         List<Game> games = new ArrayList<>();
         gameRepository.findAll().forEach(games::add);
         return games;
+    }
+
+    public void deleteGameById(Long id){
+        gameRepository.deleteById(id);
+    }
+
+    public void deleteGame(Game game){
+        gameRepository.delete(game);
     }
 }
